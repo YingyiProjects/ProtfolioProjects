@@ -24,7 +24,7 @@ ORDER BY 1,2
 
 
 -- Looking at Total Cases vs Population
--- Showa what percentage of population got Covid
+-- Shows what percentage of population got Covid
 SELECT location, date, population, total_cases, (total_cases/population)*100 AS PercentagePopulationInfected
 FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
